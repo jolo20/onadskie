@@ -1,0 +1,212 @@
+ :root {
+     --red: #115272;
+     --red-dark: #115272;
+     --bg: #f0f0f0;
+ }
+
+ html,
+ body {
+    margin: 0;
+    font-family: "Montserrat", system-ui, -apple-system, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+ }
+ /* Centering stage */
+
+.main-container{
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-container  .logo{
+    position: relative;
+    width: 10%;
+    height: 10%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    filter: blur(0px);
+    border: none;
+    display: flex;
+    align-self: flex-start;
+}
+.main-container .text-pic{
+    margin-bottom: 5px;
+}
+.right-1{
+    width: 100%;
+    position: relative;
+    background-color: #1a4d64;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0px 10px 6px 0px rgba(0, 0, 0, 0.15);
+}
+.right-2{
+    position: relative;
+    background-color: #1a4d64;
+    color: white;
+    padding: 2rem 2rem 0rem 2rem;
+    flex-direction: column;
+    height: auto;
+    box-shadow: 0px 11px 8px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+.top-logo{
+    margin-top: -20%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.logo-pic{
+    height: 100%;
+    box-shadow: 0px 15px 6px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 50% 50% 49% 51% / 100% 100% 0% 0% ;
+}
+.left{
+    position: relative;
+    height:100%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    padding: 2rem;
+    color: #1a4d64;
+    z-index: 2;
+}
+form input{
+    border: none;
+    width: 38vh;
+    border-bottom: #f0f0f0 1px solid;
+    color: #ffffff;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: #1a4d64;
+    margin-bottom: 1.5rem;
+     overflow: hidden;
+}
+#email{
+    margin-top: 1.3rem;
+}
+#password{
+    margin-top: .8rem;
+    margin-bottom: 1.8rem;
+}
+.toggle-password {
+    font-size: 1.5rem;
+   cursor: pointer;
+   position: absolute;
+   margin-left: -25px;
+   margin-top: 5px;
+}
+form input:focus{
+    border-bottom: #fd0000 1px solid;
+}
+form input::placeholder{
+    color: #f0f0f065;
+    transition: all 0.3s ease-in-out;
+}
+.controls{
+    margin-bottom: 1rem;
+}
+.btn-login{
+    width: 15rem;
+    background-color: #026fa1;
+    color: #ffffff;
+    border: none;
+    height: 2.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2rem;
+}
+.btn-login:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 6px 0px rgba(0, 0, 0, 0.15);
+    background-color: #03618d;
+    color: #f0f0f0;
+    transition: all 0.2s ease-in-out;
+}
+form a{
+    text-decoration: none;
+    color: #f0f0f0;
+}
+form a:hover{
+    font-weight: 600;
+    text-decoration:underline;
+}
+.error{
+    color:#292929b9;
+    padding: 8px;
+    position: relative;
+    margin-top: -10px;
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: #fd5f6cd0;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-animation: shake-horizontal 0.9s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	        animation: shake-horizontal 0.9s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+@-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
