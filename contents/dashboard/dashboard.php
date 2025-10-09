@@ -1,5 +1,5 @@
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/lgu-2-main-main/auth.php';
-      require_once $_SERVER['DOCUMENT_ROOT'] . '/lgu-2-main-main/includes/header.php';
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/ONADSKIE-MAIN/auth.php';
+      require_once $_SERVER['DOCUMENT_ROOT'] . '/ONADSKIE-MAIN/includes/header.php';
 $pageTitle = "Dashboard";
 ?>
 <div class=" col-12 ">
@@ -76,4 +76,4 @@ $pageTitle = "Dashboard";
 </div>
 </div>
 
-<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/lgu-2-main-main/includes/footer.php'; ?>
+<?php require_once $_SERVER['DOCUMENT_ROOT'] . '/ONADSKIE-MAIN/includes/footer.php'; ?>

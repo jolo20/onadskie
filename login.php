@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Debug the input
             error_log("Login attempt - Identifier: " . $identifier);
 
-            $sql = 'SELECT id, username, password, email, user_type FROM users WHERE email = ? OR username = ? LIMIT 1';
+            $sql = 'SELECT id, username, password, email FROM users WHERE email = ? OR username = ? LIMIT 1';
             error_log("SQL Query: " . $sql);
             $stmt = $mysqli->prepare($sql);
             if ($stmt) {
@@ -105,7 +105,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             header("Location: contents/records-and-correspondence/document-tracking.php");
                             exit;
                         } else {
-                            header("Location: /lgu-2-main-main/contents/dashboard/dashboard.php");
+                            header("Location: /ONADSKIE-MAIN/contents/dashboard/dashboard.php");
                         }
                         exit;
                     } else {

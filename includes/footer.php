@@ -29,7 +29,7 @@
   <script src="/lgu-2-main-main/assets/js/script.js"></script>
   <script>
     document.getElementById('confirmLogoutBtn').addEventListener('click', function() {
-      window.location.href = '/lgu-2-main-main/logout.php';
+      window.location.href = '/ONADSKIE-MAIN/logout.php';
     });
   </script>
 </body>
